@@ -7,8 +7,6 @@ var attempts = 0;
 alert("Привет! Я загадал число от 1 до 100. Попробуй угадать!");
 
 
-// фжывлдоафлдоа
-function checkNumber()
 
 // Функция для проверки числа
 function checkNumber() {
