@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    margin-top: 100px;
+    background-color: #808080;
+    font-family: Arial, sans-serif;
+}
+
+#counterDisplay {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin: 50px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#speedPlus {
+    background-color: #5dd061;
+    color: white;
+}
+
+#speedMinus {
+    background-color: #e03326;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.speed-plus-active {
+    background-color: #93fa93 !important;
+}
+
+.speed-plus-active #counterDisplay {
+    color: #f5b5be !important;
+}
+
+.speed-minus-active {
+    background-color: #fdaeba !important;
+}
+
+.speed-minus-active #counterDisplay {
+    color: #8ff28f !important;
+}
+
+.reset-active {
+    background-color: #878787 !important;
+}
+
+.reset-active #counterDisplay {
+    color: black !important;
+}
