@@ -1,4 +1,3 @@
-// Массив пользователей (пример 7 пользователей)
 const users = [
   { login: "user1", password: "pass1", name: "Гамао" },
   { login: "user2", password: "pass2", name: "Артур пирожков" },
