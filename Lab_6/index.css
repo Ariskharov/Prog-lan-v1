@@ -1,4 +1,6 @@
 .msg { margin-top: 12px; min-height: 20px; }
+
 .msg.success { color: #198754; }
+
 .msg.error { color: #dc3545; }
 

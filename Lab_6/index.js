@@ -5,6 +5,7 @@ const users = [
   { login: "student", password: "qwerty", name: "Мария цымбалова" },
 ];
 
+
 const form = document.getElementById("auth-form");
 const loginInput = document.getElementById("login");
 const passwordInput = document.getElementById("password");
