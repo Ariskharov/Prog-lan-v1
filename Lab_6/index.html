@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Авторизация</h1>
+        <form id="auth-form" autocomplete="off">
+            <div class="field">
+                <label for="login">Логин</label>
+                <input id="login" name="login" required>
+            </div>
+            <div class="field">
+                <label for="password">Пароль</label>
+                <input id="password" name="password" type="password" required>
+            </div>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+        <div id="message" class="msg" aria-live="polite"></div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
