@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background: #1a1a1a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    background: black;
+    color: var(--orange);
+    border-radius: 0;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background: #414349;
+}
+
+.btn:active {
+    background: #56585D;
+    border: 2px solid var(--orange);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+}
+
+h4 {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+}
+
+strong {
+    color: #7cb342;
+    font-family: 'Press Start 2P', monospace;
+}
+
+label {
+    font-size: 14px;
+    color: var(--orange);
+    font-family: 'Press Start 2P', monospace;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 5px;
+    color: var(--orange);
+    background: #1a1a1a;
+    border: 2px solid var(--orange);
+    border-radius: 0;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+    outline: none;
+    border-color: #3d6b1f;
+    box-shadow: 
+        0 0 8px rgba(124, 179, 66, 0.3),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.checker {
+    color: white;
+    font-size: 16px;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.btn-slide {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--orange);
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 800;
+    z-index: 1;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.btn-slide:hover {
+    background: #3d6b1f !important;
+    cursor: pointer;
+    color: white;
+}
+
+:root {
+    --orange: #7cb342;
+    --minecraft-dark-green: #2d5016;
+    --minecraft-medium-green: #3d6b1f;
+    --minecraft-light-green: #7cb342;
+    --minecraft-dark-gray: #1a1a1a;
+    --minecraft-medium-gray: #2d2d2d;
+    --minecraft-brown: #4a3a2a;
+}
+
+/* Основные кнопки с 3D эффектом */
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    background: black;
+    color: var(--orange);
+    border-radius: 0;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    
+    /* 3D эффект выпирания + внутренняя тень */
+    box-shadow: 
+        0 4px 0 #2d5016,
+        0 6px 8px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+.btn:hover {
+    background: #2d2d2d;
+    box-shadow: 
+        0 6px 0 #2d5016,
+        0 8px 12px rgba(0, 0, 0, 0.7),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background: #1a1a1a;
+    border: 2px solid var(--orange);
+    box-shadow: 
+        0 2px 0 #2d5016,
+        0 3px 4px rgba(0, 0, 0, 0.5),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translateY(2px);
+}
+
+/* Кнопки слайдера с 3D эффектом */
+.btn-slide {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: var(--orange);
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-weight: 800;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', monospace;
+    
+    /* 3D эффект выпирания для круглых кнопок + внутренняя тень */
+    box-shadow: 
+        0 5px 0 #2d5016,
+        0 8px 12px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+    transition: all 0.15s ease;
+}
+
+.btn-slide:hover {
+    background: #3d6b1f;
+    color: white;
+    box-shadow: 
+        0 7px 0 #1a3a0a,
+        0 10px 16px rgba(0, 0, 0, 0.7),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.btn-slide:active {
+    box-shadow: 
+        0 2px 0 #1a3a0a,
+        0 4px 6px rgba(0, 0, 0, 0.5),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translateY(3px);
+}
+
+/* Кнопки цветов с 3D эффектом */
+.btn-color {
+    border-radius: 0;
+    border-color: #7cb342 !important;
+    font-family: 'Press Start 2P', monospace;
+    box-shadow: 
+        0 4px 0 #2d5016,
+        0 6px 8px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+    transition: all 0.1s ease;
+}
+
+.btn-color:hover {
+    box-shadow: 
+        0 6px 0 #2d5016,
+        0 8px 12px rgba(0, 0, 0, 0.7),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    border-color: #3d6b1f !important;
+}
+
+.btn-color:active {
+    box-shadow: 
+        0 2px 0 #2d5016,
+        0 3px 4px rgba(0, 0, 0, 0.5),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translateY(2px);
+}
+
+/* Темные кнопки в модальном окне */
+.btn_dark {
+    background: var(--orange);
+    color: #1a1a1a;
+    font-weight: 600;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    box-shadow: 
+        0 4px 0 #2d5016,
+        0 6px 8px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn_dark:hover {
+    background: #3d6b1f;
+    color: white;
+    box-shadow: 
+        0 6px 0 #1a3a0a,
+        0 8px 12px rgba(0, 0, 0, 0.7),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn_dark:active {
+    box-shadow: 
+        0 2px 0 #1a3a0a,
+        0 3px 4px rgba(0, 0, 0, 0.5),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Кнопки Tab Slider с 3D эффектом */
+.tab_content_item {
+    padding: 10px;
+    height: 50px;
+    color: white;
+    border: 1px solid var(--orange);
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-family: 'Press Start 2P', monospace;
+    
+    /* 3D эффект выпирания + внутренняя тень */
+    box-shadow: 
+        0 3px 0 #2d5016,
+        0 5px 8px rgba(0, 0, 0, 0.5),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(0);
+    transition: all 0.1s ease;
+    background: #1a1a1a;
+    border-radius: 0;
+}
+
+.tab_content_item:hover {
+    box-shadow: 
+        0 5px 0 #2d5016,
+        0 7px 10px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    background: #2d2d2d;
+}
+
+.tab_content_item:active {
+    box-shadow: 
+        0 1px 0 #2d5016,
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translateY(2px);
+}
+
+.tab_content_item_active {
+    background: var(--orange);
+    color: #1a1a1a;
+    font-weight: 600;
+    border: 1px solid #7cb342;
+    
+    /* 3D эффект для активной вкладки + внутренняя тень */
+    box-shadow: 
+        0 4px 0 #2d5016,
+        0 6px 10px rgba(0, 0, 0, 0.6),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.tab_content_item_active:hover {
+    box-shadow: 
+        0 6px 0 #1a3a0a,
+        0 8px 12px rgba(0, 0, 0, 0.7),
+        inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
