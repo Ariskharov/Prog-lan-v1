@@ -1,16 +1,20 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./PostList.css";
+import minecraftPosts from "./minecraftPosts.json";
 
 export default function PostList() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((data) => setPosts(data))
-      .finally(() => setIsLoading(false));
+
+    const timer = setTimeout(() => {
+      setPosts(minecraftPosts);
+      setIsLoading(false);
+    }, 400);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const curatedPosts = useMemo(() => posts.slice(0, 12), [posts]);
