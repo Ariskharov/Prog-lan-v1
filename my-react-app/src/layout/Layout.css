@@ -1,0 +1,18 @@
+.app-shell {
+  color: #f5f5f5;
+  background: linear-gradient(180deg, rgba(9, 14, 7, 0.92), rgba(11, 17, 8, 0.98));
+}
+
+.letter-spacing {
+  letter-spacing: 0.2rem;
+}
+
+header .nav-link.active {
+  color: #8cff63 !important;
+  font-weight: 600;
+}
+
+header .nav-link:hover {
+  color: #c5f6a9 !important;
+}
+

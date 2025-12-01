@@ -1,0 +1,20 @@
+.post-list-page {
+  background-color: transparent;
+}
+
+.hero-subtitle {
+  max-width: 620px;
+}
+
+.minecraft-card {
+  background: rgba(7, 12, 8, 0.9);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(140, 255, 99, 0.25);
+  box-shadow: 0 15px 35px rgba(8, 25, 4, 0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.minecraft-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(9, 28, 6, 0.65);
+}
